@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import concurrent.futures as cf
 import json
-#import remotelab
+import remotelab
 import time
 import queue
 
@@ -207,8 +207,9 @@ def params():
 	except:
 		pass
 		
-	if request.method == 'GET': pass
-		
+	if request.method == 'GET':
+		pass
+
 	return jsonify(state)
 
 if __name__ == "__main__":
